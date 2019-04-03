@@ -106,8 +106,22 @@ ul {
   padding: 5px;
 }
 .pyg_content {
-  background-color: yellow;
   flex: 1;
+  overflow: scroll;
+}
+.pyg_nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pyg_nav > a {
+  flex: 1;
+  display: block;
+  width: 25%;
+}
+.pyg_nav > a > img {
+  width: 100%;
 }
 .pyg_footer {
   height: 45px;

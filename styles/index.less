@@ -17,8 +17,23 @@
 }
 
 .pyg_content {
-    background-color: yellow;
     flex: 1;
+    overflow: scroll;
+}
+
+.pyg_nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >a{
+        flex: 1;
+        display: block;
+        width: 25%;
+        >img{
+            width: 100%;
+        }
+    }
 }
 
 .pyg_footer {
