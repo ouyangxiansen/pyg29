@@ -8,6 +8,8 @@
     <!-- 引入mui框架文件 -->
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <!-- 引入字体图标文件 -->
+    <link rel="stylesheet" href="./lib/fontawesome/fonts/mui-icons-extra.ttf">
+    <!-- 引入字体图标文件 -->
     <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
     <!-- 引入首页样式文件 -->
     <link rel="stylesheet" href="./styles/index.css">
@@ -31,7 +33,26 @@
         <div class="pyg_content">
 
             <!-- 轮播图结构开始 -->
-            <div class="pyg_banner"></div>
+            <div class="pyg_banner">
+                <div class="mui-slider">
+                    <!-- 图片轮播 -->
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="http://157.122.54.189:9094/full//banner3.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="http://157.122.54.189:9094/full//banner1.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="http://157.122.54.189:9094/full//banner2.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="http://157.122.54.189:9094/full//banner3.png" /></a></div>
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="http://157.122.54.189:9094/full//banner1.png" /></a></div>
+                    </div>
+                    <!-- 小圆点 -->
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+            </div>
             <!-- 轮播图结构结束 -->
 
             <!-- 导航栏结构开始 -->
@@ -46,7 +67,26 @@
         <!-- 内容结构结束 -->
 
         <!-- 底部结构开始 -->
-        <div class="pyg_footer"></div>
+        <div class="pyg_footer">
+            <nav class="mui-bar mui-bar-tab">
+                <a class="mui-tab-item mui-active" href="#tabbar">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item " href="#tabbar-with-chat">
+                    <span class="mui-icon mui-icon-list"></span>
+                    <span class="mui-tab-label">分类</span>
+                </a>
+                <a class="mui-tab-item" href="#tabbar-with-contact">
+                    <span class="mui-icon mui-icon-contact"></span>
+                    <span class="mui-tab-label">购物车</span>
+                </a>
+                <a class="mui-tab-item" href="#tabbar-with-map">
+                    <span class="mui-icon mui-icon-contact"></span>
+                    <span class="mui-tab-label">我的</span>
+                </a>
+            </nav>
+        </div>
         <!-- 底部结构结束 -->
 
     </div>
